@@ -37,7 +37,7 @@ public class BlockChainController{
       
       model.addAttribute("wallet_naam", walletRepository.findByName(walletName));
 
-      return "gelukt";
+      return "mislukt";
    }
 
    @PostMapping("/new")
