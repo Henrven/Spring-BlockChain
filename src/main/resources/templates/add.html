@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html xmlns:th='http://www.thymeleaf.org'>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+
+<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+
+<title>Get the joke</title>
+</head>
+
+<body>
+<div class="card card-body bg-light">
+<h1>Get the Joke</h1>
+<br/>
+<form method=POST th:action='@{/joke_post}'>
+	<div class='form-group row'>
+		 <div class='col-xs-4'>
+			<label for='firstName'>Wallet Name : </label>
+				<input type='text' class='form-control' name='firstName'>
+			</div>
+        </div>
+        <div class='form-group row'>
+            <div class='col-xs-4'>
+                <label for='lastName'>start ammount: </label>
+                    <input type='text' class='form-control' name='lastName'>
+                </div>
+            </div>
+    
+            <input type=SUBMIT value='Go!'>
+    </form>
+    </div>
+    
+    </body>
+    </html>
