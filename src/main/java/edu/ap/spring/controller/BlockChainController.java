@@ -50,6 +50,13 @@ public class BlockChainController{
     return "add";
    }
    
-   
-   
+   @PostMapping
+   @ResponseBody
+   public String wallet_post(@RequestParam("walletName") String walletName,
+                            @RequestParam("ammount") long ammount)
+   {
+       long bedrag1 = 20;
+       long niewbedrag = bedrag1 - ammount;
+return  "overmaken bedrag";
+   }
 }
