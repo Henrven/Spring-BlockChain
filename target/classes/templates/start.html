@@ -13,6 +13,14 @@
 <h1>Wallet List</h1>
 <br/><br/>
 <table  class='table'>
+	<tr>
+		<th>Wallet name</th>
+		<th>wallet ammount</th>
+			</tr>
+	<tr th:each='wallet: ${wallets}'>
+		<td th:text='${wallet?.walletName}' />
+		<td th:text='${wallet?.ammount}' />
+	</tr>
 </table>
 </div>
 

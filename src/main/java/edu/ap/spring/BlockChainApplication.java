@@ -9,12 +9,14 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class BlockChainApplication {
 	
+	@Bean
+    public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
+		return (args) -> {};
+		}
+		
 	public static void main(String[] args) {
 		SpringApplication.run(BlockChainApplication.class, args);
 	}
 
-	@Bean
-  	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
-		return (args) -> {};
-  	}
+	
 }
